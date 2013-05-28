@@ -29,6 +29,7 @@ describe "User pages" do
       end
 
       describe "after saving the user" do
+        before { click_button submit }
         it { should have_link('Sign out') }
       end
     end
